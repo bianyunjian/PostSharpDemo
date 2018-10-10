@@ -3,3 +3,12 @@
 ################################################################################
 
 /AOP/bin/Debug
+/AOP/obj/Debug
+/.vs/AOPTestProject/v14
+/AOPTestProject/bin/Debug
+/AOPTestProject/obj/Debug
+/packages
+/PostSharpSample/bin/Debug
+/PostSharpSample/obj/Debug
+/PostSharpTestProject/bin/Debug
+/PostSharpTestProject/obj/Debug
