@@ -2,7 +2,7 @@
 using PostSharpSample.Caching;
 using PostSharpSample.Multithreading;
 using PostSharpSample.Recordable;
-
+using PostSharpSample.Transaction;
 using System;
 using System.Windows.Forms;
 
@@ -26,7 +26,9 @@ namespace PostSharpTestProject
             //Application.Run(new Form1());
             //Multithreading.TestDeadlock();
 
-            Caching.Test();
+            //Caching.Test();
+
+            Transaction.Test();
 
             Console.ReadKey();
         }
