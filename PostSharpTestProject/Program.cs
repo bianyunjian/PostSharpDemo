@@ -1,4 +1,5 @@
 ﻿using PostSharpSample;
+using PostSharpSample.Caching;
 using PostSharpSample.Multithreading;
 using PostSharpSample.Recordable;
 
@@ -23,7 +24,9 @@ namespace PostSharpTestProject
             //RecordableTest.Test();
 
             //Application.Run(new Form1());
-            Multithreading.TestDeadlock();
+            //Multithreading.TestDeadlock();
+
+            Caching.Test();
 
             Console.ReadKey();
         }

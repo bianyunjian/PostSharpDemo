@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PostSharpSample</RootNamespace>
     <AssemblyName>PostSharpSample</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -44,6 +44,10 @@
       <HintPath>..\packages\PostSharp.Patterns.Aggregation.Redist.6.0.28\lib\net45\PostSharp.Patterns.Aggregation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PostSharp.Patterns.Caching, Version=6.0.28.0, Culture=neutral, PublicKeyToken=e7f631e6ce13f078, processorArchitecture=MSIL">
+      <HintPath>..\packages\PostSharp.Patterns.Caching.Redist.6.0.28\lib\net46\PostSharp.Patterns.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PostSharp.Patterns.Common, Version=6.0.28.0, Culture=neutral, PublicKeyToken=e7f631e6ce13f078, processorArchitecture=MSIL">
       <HintPath>..\packages\PostSharp.Patterns.Common.Redist.6.0.28\lib\net45\PostSharp.Patterns.Common.dll</HintPath>
       <Private>True</Private>
@@ -61,13 +65,20 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caching\Caching.cs" />
     <Compile Include="Multithreading\Multithreading.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Contracts\Contracts.cs" />

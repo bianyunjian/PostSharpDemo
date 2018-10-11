@@ -1,4 +1,5 @@
-﻿using PostSharp.Patterns.Diagnostics;
+﻿using PostSharp.Patterns.Caching;
+using PostSharp.Patterns.Diagnostics;
 using PostSharp.Patterns.Diagnostics.Audit;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,9 @@ namespace PostSharpSample
             LoggingServices.DefaultBackend = backend;
 
             //AuditServices.RecordPublished += AuditServices_RecordPublished;
+
+            CachingServices.DefaultBackend = new PostSharp.Patterns.Caching.Backends.MemoryCachingBackend();
+         
         }
         private static void AuditServices_RecordPublished(object sender, AuditRecordEventArgs e)
         {
