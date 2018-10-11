@@ -1,5 +1,9 @@
 ﻿using PostSharpSample;
+using PostSharpSample.Multithreading;
+using PostSharpSample.Recordable;
+
 using System;
+using System.Windows.Forms;
 
 namespace PostSharpTestProject
 {
@@ -7,18 +11,23 @@ namespace PostSharpTestProject
     {
         static void Main(string[] args)
         {
-            Base.Init();
+            Startup.Init();
 
             //Logging.Test();
 
             //Contracts.Test();
 
-            PropertyChange.Test();
+            //PropertyChange.Test();
 
+
+            //RecordableTest.Test();
+
+            //Application.Run(new Form1());
+            Multithreading.TestDeadlock();
 
             Console.ReadKey();
         }
 
-      
+
     }
 }

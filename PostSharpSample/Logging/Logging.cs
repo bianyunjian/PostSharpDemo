@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PostSharpSample
+namespace PostSharpSample.Logging
 {
     public class Logging
     {

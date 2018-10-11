@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PostSharpSample
+namespace PostSharpSample.PropertyChanged
 {
     public class PropertyChange
     {

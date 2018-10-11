@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PostSharpSample
 {
-    public class Base
+    public class Startup
     {
         public static void Init()
         {
@@ -19,7 +19,7 @@ namespace PostSharpSample
 
             LoggingServices.DefaultBackend = backend;
 
-            AuditServices.RecordPublished += AuditServices_RecordPublished;
+            //AuditServices.RecordPublished += AuditServices_RecordPublished;
         }
         private static void AuditServices_RecordPublished(object sender, AuditRecordEventArgs e)
         {
